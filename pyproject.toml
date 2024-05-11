@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "yolox-sample"
+version = "0.1.0"
+description = ""
+authors = ["Nao-Y1996 <60519909+Nao-Y1996@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "2.2.0"
+torchvision = "0.17"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
