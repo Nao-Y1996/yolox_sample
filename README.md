@@ -2,26 +2,26 @@
 
 ## 1. 環境構築
 
-### 1.1 ライブラリのインストール
+### 1.1 クローン
+
+yoloxがサブモジュールとし含まれるため、サブモジュールを一緒にクローンする必要がありす。以下のコマンドリポジトリをクローンしてください
 
 ```bash
-poetry install
+git clone --recurse-submodules git@github.com:Nao-Y1996/yolox_sample.git
 ```
 
-### 1.2. YOLOXリポジトリのクローン
-
-YOLOXのリポジトリをサブモジュールとして追加します。
-YOLOXのリポジトリを`yolox`ディレクトリのなかに追加します。
-
-```bash
-git submodule add git@github.com:Megvii-BaseDetection/YOLOX.git yolox
-```
-
-サブモジュールの初期化と更新を行います。
+`--recurse-submodules`をつけずにクローンした場合は以下のコマンドでyoloサブモジュールを取得してください
 
 ```bash
 git submodule init 
 git submodule update
+```
+
+### 1.2 ライブラリのインストール
+
+```bash
+poetry shell
+poetry install
 ```
 
 ### 1.3. YOLOXのインストール
