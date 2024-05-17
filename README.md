@@ -63,3 +63,25 @@ YOLOXの学習に使用するデータセットとして、[mini-coco128](https:
 ダウンロードしたzipファイルを解凍し、`datasets`ディレクトリに配置します。
 `datases/coco128`のようになっていればOKです。
 
+
+## データセットの準備
+
+ディレクトリ構成は以下のようになっていることを想定しています。
+
+```
+yolox_sample
+├── datasets
+│   └── coco128  # data_dir
+│       └── annotations
+│           ├── instances_val2017.json  # json_file
+│           └── instances_train2017.json
+│       └── val2017  # name
+│           ├── 000000000139.jpg
+│           ├── 000000000285.jpg
+│           ├── ...
+│       └── train2017
+│           ├── 000000000009.jpg
+│           ├── 000000000025.jpg
+│           ├── ...
+```
+
