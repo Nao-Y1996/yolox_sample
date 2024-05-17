@@ -2,3 +2,10 @@
 .idea
 **/__pycache__/**
 datasets/**
+
+YOLOX_outputs/
+
+yolox_s.pth
+yolox_m.pth
+yolox_l.pth
+yolox_x.pth
